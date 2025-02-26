@@ -10,11 +10,16 @@
 ## Requirement
 
 ### Download Composer
-[text](https://getcomposer.org/download/)
+https://getcomposer.org/download
 
 ## Instalasi Laravel
 
-### 
+### Create
+composer create-project laravel/laravel nama_proyek
+
+### Serve
+php artisan serve
+
 
 ## About Laravel
 
