@@ -7,6 +7,15 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Requirement
+
+### Download Composer
+[text](https://getcomposer.org/download/)
+
+## Instalasi Laravel
+
+### 
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
@@ -70,3 +79,18 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 php artisan key:generate
 php artisan make:controller ArtikelController --resource
 php artisan make:model Artikel -mf
+php artisan migrate
+
+php artisan tinker
+\App\Models\Artikel::factory()->count(10)->create();
+
+use App\Models\Artikel;
+
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
+    {
+        $artikels = Artikel::all();
+        return view('artikels.index', compact('artikels'));
+    }
