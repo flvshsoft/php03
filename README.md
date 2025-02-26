@@ -12,6 +12,9 @@
 ### Download Composer
 https://getcomposer.org/download
 
+### Download Git
+https://git-scm.com/downloads
+
 ## Instalasi Laravel
 
 ### Create
